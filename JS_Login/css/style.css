@@ -1,0 +1,238 @@
+:root{
+    --primero : #185a9d;
+    --segundo : #43cea2;
+}
+
+html{
+    font-size:62.5%;
+    box-sizing:border-box;
+}
+
+body{
+    font-size:1.5rem;
+    background: linear-gradient(to right,#185a9d ,#43cea2 );
+    font-family: sans-serif;
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+h1{
+    color:rgb(255 255 255);
+    font-weight: 400;
+    text-align: center;
+    margin:0rem;
+    font-size: 2.5rem;
+}
+
+
+.contenedor{
+    max-width: 120rem;
+    width: 95%;
+    margin:0 auto;
+}
+
+
+/* Nuestro formulario */
+.entrada{
+    margin-bottom: 4rem;
+}
+
+.entrada .entrada_section{
+    background-color:#AE1FF0;
+    margin-top: 5rem;
+    padding:1rem;
+}
+
+.entrada .entrada_formulario{
+    background-color:rgb(255 255 255);
+    padding:4rem 5rem 10rem 5rem;
+}
+
+
+.formulario{
+    width: 50rem;
+    margin: 0 auto;
+}
+
+/* Campos. */
+.entrada .entrada_formulario .campo{
+    padding-bottom: 1.5rem;
+    display: flex;
+    flex-direction:column;
+    
+}
+
+input,textarea{
+    width: 100%;
+    max-width: 100%;
+    box-shadow: 0px 2px 8px 0px rgb(0 0 0 / .2);
+    border:1px solid rgb( 0 0 0  / .2);
+    padding:1.5rem;  
+}
+
+
+/* BOTONES DE OPCIONES */
+.opcion{
+    display: flex;
+    justify-content: space-between;
+    gap:2rem;
+}
+
+.boton{
+    width: 25rem;
+    height: 6rem;
+    border:none;
+
+    color:rgb(255 255 255);
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+button.enviar{
+    /* border:none; */
+    background-color:#207fdd;
+    background-image: url(/img/send-regular-24.png);
+    background-repeat: no-repeat;
+    background-position: 16rem;
+}
+
+/* Desactivar boton Enviar. */
+
+button.desactivado{
+    background-color:#c5d8eb;
+    background-image: url(/img/send-regular-24.png);
+    background-repeat: no-repeat;
+    background-position: 16rem;
+}
+
+button.desactivado:hover{
+    cursor:not-allowed;
+    
+}
+
+button.resetear{
+    background-color:rgb(28, 184, 28);
+
+    background-image: url(/img/trash-solid-24.png);
+    background-repeat: no-repeat;
+    background-position: 20rem;
+    padding: 0rem 2.5rem;
+}
+
+button.enviar:hover,
+button.resetear:hover{
+    cursor:pointer;
+}
+
+/* Generar Alerta informativa. */
+.alerta{
+    padding:1.5rem;
+    color:rgb(255 255 255);
+    font-weight: 500;
+    text-align: center;
+}
+
+.error{
+    background-color:rgba(235, 29, 29, 0.911);
+}
+
+.exito{
+    background-color:rgba(151, 235, 29, 0.91);
+}
+
+/* Generamos una animacion... */
+.animacion-activada{
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+}   
+
+.animacion-desactivada{
+    display: none;
+}
+
+.animacion-sniper1{
+    animation-name:animacion-sniper1;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    position: relative;
+    padding:1.4rem;
+    margin:2rem;
+    text-align: center;
+    width: 1.9rem;
+    height: 1.9rem;
+    border-radius: 3rem;
+    background-color:#3d85ce;
+}
+
+@keyframes animacion-sniper1 {
+    10%{background-color:#039427;right: 1px;}
+    20%{background-color:#e0dd11;right: 2px}
+    30%{ background-color:#3d85ce;right: 3px;}
+
+    40%{ background-color:#e0dd11; right: 4px;}
+    50%{ background-color:#3d85ce; right: 5px;}
+    60%{background-color:#039427; right: 6px;}
+
+    70%{ background-color:#3d85ce; right: 7px;}
+    80%{background-color:#039427; right: 8px;}
+    90%{ background-color:#e0dd11; right: 0px;}
+}
+
+.animacion-sniper2{
+    animation-name:animacion-sniper2;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    padding:1.4rem;
+    margin:2rem;
+    text-align: center;
+    width: 1.9rem;
+    height: 1.9rem;
+    border-radius: 3rem;
+    background-color:#12e046;
+}
+
+@keyframes animacion-sniper2 {
+    10%{ background-color:#e0dd11;}
+    20%{ background-color:#3d85ce;}
+    30%{background-color:#039427;}
+
+    40%{ background-color:#3d85ce;}
+    50%{background-color:#039427;}
+    60%{ background-color:#e0dd11;}
+
+    70%{background-color:#039427;}
+    80%{background-color:#e0dd11;}
+    90%{ background-color:#3d85ce;}
+}
+
+.animacion-sniper3{
+    animation-name:animacion-sniper3;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    padding:1.4rem;
+    margin:2rem;
+    text-align: center;
+    position: relative;
+    width: 1.9rem;
+    height: 1.9rem;
+    border-radius: 3rem;
+    background-color:#e0dd11;
+}
+
+@keyframes animacion-sniper3 {
+    10%{ background-color:#3d85ce; left: 1px;}
+    20%{background-color:#039427; left: 2px;}
+    30%{ background-color:#e0dd11; left: 3px;}
+
+    40%{background-color:#039427; left: 4px;}
+    50%{background-color:#e0dd11; left: 5px;}
+    60%{ background-color:#3d85ce; left: 6px;}
+
+    70%{ background-color:#3d85ce; left: 7px;}
+    80%{background-color:#039427; left: 8px;}
+    90%{ background-color:#e0dd11;left: 0px;}
+}

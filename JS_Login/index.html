@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/style.css"/>
+    <title>Mail Web</title>
+</head>
+<body>
+    <div class="entrada contenedor">
+        <section class="entrada_section">
+            <h1>Enviar Nuevo Mail</h1>
+        </section>
+
+        <div class="entrada_formulario">
+            <form method="post" class="formulario">
+                <div class="campo">
+                    <label for="Para">Para:</label>
+                    <input type="email" id="Para">
+                </div>
+
+                <div class="campo">
+                    <label for="Asunto">Asunto</label>
+                    <input type="text" id="Asunto" class="asunto">
+                </div>
+
+                <div class="campo">
+                    <label for="Mensaje">Mensaje</label>
+                    <textarea id="Mensaje" class="mensaje" cols="30" rows="10"></textarea>
+                </div>
+
+                <!-- Generamos una animacion ... -->
+                <div class="animacion animacion-desactivada">
+                    <div class="animacion-sniper1"></div>
+                    <div class="animacion-sniper2"></div>
+                    <div class="animacion-sniper3"></div>
+                </div>
+
+                <div class="opcion">
+                    <button id="enviar" type="button" class="boton">
+                        Enviar
+                    </button>
+
+                    <button id="resetear" type="button" class="boton resetear">
+                        Resetear Form
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="/js/app.js"></script>
+</body>
+</html>
